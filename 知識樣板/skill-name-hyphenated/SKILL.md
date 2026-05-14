@@ -1,6 +1,6 @@
 ---
 name: skill-name-hyphenated
-description: "This skill should be used when [specific trigger scenarios]. [1-1024 chars, keep key use case first]"
+description: "This skill should be used when [specific trigger scenarios]. [1-1024 chars]"
 license: CC-BY-NC-SA-4.0
 compatibility: claude-code,opencode,agent-skills
 metadata:

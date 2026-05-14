@@ -57,20 +57,20 @@ user-invocable: true
 |------|--------|---------|
 | Top-level category | Traditional Chinese | `建築設計與規劃/` |
 | Subcategory | Traditional Chinese | `設計理論/` |
-| Skill directory | lowercase-hyphenated | `concept-design/` |
+| **Knowledge Entry** | **Traditional Chinese** | **`排煙窗法規檢討/`** |
+| **AI Skill Directory** | **lowercase-hyphenated** | **`smoke-exhaust-review/`** |
 | Files inside skill | SKILL.md (uppercase), domain.md | `SKILL.md`, `domain.md` |
 | Frontmatter name | lowercase-hyphenated | `name: building-envelope` |
 
-**CRITICAL**: The skill directory name **MUST** exactly match the `name` field in SKILL.md frontmatter. This is a hard requirement of the Agent Skills standard (Claude Code, OpenCode).
+**CRITICAL**: The AI Skill directory name **MUST** exactly match the `name` field in SKILL.md frontmatter. This is a hard requirement of the Agent Skills standard (Claude Code, OpenCode).
 
-**Chinese directory conversion**: If a user creates a skill folder with a Chinese name (e.g., `排煙設備審查/`), the Agent **MUST** rename it to lowercase-hyphenated English (e.g., `smoke-exhaust-review/`) and inform the user. Upper-level categories and subcategories may remain in Chinese.
+**Two-layer structure**: The outer directory (for human navigation) should be in Traditional Chinese. The inner directory (containing SKILL.md) **MUST** be in lowercase-hyphenated English.
 
-**English translation, NOT pinyin**: Skill directory names must be English translations of the concept, never Chinese pinyin.
+**English translation, NOT pinyin**: The inner AI Skill directory names must be English translations of the concept, never Chinese pinyin.
 
-- ✅ `smoke-exhaust-review/` (英文翻譯)
-- ✅ `building-area-review/` (英文翻譯)
-- ❌ `pai-yan-she-bei-shen-cha/` (拼音)
-- ❌ `jian-zhu-mian-ji/` (拼音)
+- ✅ `排煙窗法規檢討/smoke-exhaust-review/SKILL.md`
+- ❌ `排煙窗法規檢討/pai-yan-chuang/SKILL.md`
+- ❌ `排煙窗法規檢討/assets/skill.md` (SKILL.md must be in the root of the English directory)
 
 ## Code Style Guidelines
 
@@ -108,11 +108,12 @@ Include MCP tool call examples with official Taiwan Building Code URLs:
 
 ## Creating a New Skill
 1. Choose category/subcategory directory
-2. Create `Category/Subcategory/skill-name/` (**lowercase-hyphenated English only**, NOT Chinese)
-3. Write `SKILL.md` with frontmatter + English technical content (the `name` field MUST match the directory name)
-4. Write `domain.md` with Traditional Chinese content
-5. Update `Category/Subcategory/README.md` table
-6. Update root `README.md` skill count
+2. Copy `知識樣板/` to the target location and rename the outer directory to Traditional Chinese.
+3. Inside the Chinese directory, create an inner directory named in **lowercase-hyphenated English only**.
+4. Write `SKILL.md` in the English directory with frontmatter + English technical content (the `name` field MUST match the English directory name).
+5. Write `domain.md` in the Chinese directory with Traditional Chinese content.
+6. Update `Category/Subcategory/README.md` table
+7. Update root `README.md` skill count
 
 ## Editing Existing Skills
 - Never delete existing `SKILL.md` or `domain.md` without replacement
