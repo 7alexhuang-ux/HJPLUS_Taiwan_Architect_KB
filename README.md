@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="LICENSE-CODE">
-    <img src="https://img.shields.io/badge/Code-GPL%20v3-blue" alt="Code License"></a>
+    <img src="https://img.shields.io/badge/Code-Apache%202.0-blue" alt="Code License"></a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/Content-CC%20BY--SA%204.0-lightgrey" alt="Content License"></a>
   <img src="https://img.shields.io/badge/brand-HJPLUS.DESIGN-black" alt="HJPLUS.DESIGN">
@@ -272,6 +272,6 @@ description: "This skill should be used when [具體觸發情境]。"
 此專案採用 **分層授權** 模式：
 
 - **文字內容**（`.md` 文件）：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hant)
-- **腳本程式碼**（`.sh`、`.py`、`.js`、`.ts` 等）：[GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)
+- **腳本程式碼**（`.sh`、`.py`、`.js`、`.ts` 等）：[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 詳見 [LICENSE](LICENSE) 與 [LICENSE-CODE](LICENSE-CODE) 檔案。

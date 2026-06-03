@@ -181,6 +181,6 @@ interface SkillParams {
 | Content Type | License |
 |--|--|
 | **Documentation** (`.md` files) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) |
-| **Code** (`.sh`, `.py`, `.js`, `.ts`, etc.) | [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html) |
+| **Code** (`.sh`, `.py`, `.js`, `.ts`, etc.) | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) |
 
 See [LICENSE](LICENSE) and [LICENSE-CODE](LICENSE-CODE) for full text.

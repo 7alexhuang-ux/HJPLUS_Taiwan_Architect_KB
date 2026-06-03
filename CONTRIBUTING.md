@@ -153,10 +153,10 @@ metadata:
 本專案採用**分層開源授權**模式：
 
 - **文字檔案**（`.md` 文件、知識文件）：使用 [創用 CC 姓名標示—相同方式分享 4.0 國際公眾授權條款](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hant) 授權。
-- **程式碼**（`.sh`、`.py`、`.js`、`.ts` 等）：使用 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) 授權。
+- **程式碼**（`.sh`、`.py`、`.js`、`.ts` 等）：使用 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 授權。
 
 ### 貢獻者聲明
 
 - 各貢獻者保留其貢獻內容之著作權。
-- 當你送出 Pull Request 時，即視為你同意將貢獻內容以本專案對應的授權條款（CC BY-SA 4.0 或 GPL v3）開放給專案使用與散布。
+- 當你送出 Pull Request 時，即視為你同意將貢獻內容以本專案對應的授權條款（CC BY-SA 4.0 或 Apache 2.0）開放給專案使用與散布。
 - 若你的貢獻包含第三方素材（圖片、文字、程式碼等），請確保該素材的授權條款與本專案相容，並附上來源說明。
