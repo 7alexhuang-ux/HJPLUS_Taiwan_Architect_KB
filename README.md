@@ -69,10 +69,11 @@
   - [taiwan-construction-docs](建築法規/施工文件與驗收/taiwan-construction-docs/) (C 類台灣法規)
 - **容積率與建蔽率計算/**
   - [taiwan-programming](建築法規/容積率與建蔽率計算/taiwan-programming/) (C 類台灣法規)
+- **建築技術規則/**
+  - [taiwan-stair-railing-ramp](建築法規/建築技術規則/樓梯欄杆坡道/) (C 類台灣法規) — 第七節 樓梯、欄杆、坡道（§33–39）；目前完整收錄 §33 樓梯寬度
 
-**9 個待建立目錄**
+**8 個待建立目錄**
 
-- 建築技術規則/
 - 建築法/
 - 都市計畫法/
 - 建築材料與構造/
