@@ -22,6 +22,7 @@
 
 > 感謝所有貢獻者！此區塊記錄近期已合併的 PR。
 
+- **2026-06-17** 🏗️ 新增混凝土結構設計分類（5 個 C 類技能）([#9](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/9))
 - **2026-05-17** ✨ 新增公共工程分類（公開招標、公開閱覽） ([#4](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/4))
 - **2026-05-03** 🔥 新增排煙窗法規檢討技能 ([#1](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/1))
 
@@ -151,14 +152,15 @@
 
 ### 7️⃣ [建築施工與材料](建築施工與材料/) Construction Materials
 
-- 施工方法/
-- 材料選擇/
-- 品質管制/
-- 安全標準/
-- 環境考量/
-- 維護與修繕/
+**5 個技能模組（5C）**
 
-> 待擴充
+| 分類 | 技能 | 類別 |
+|--|--|--|
+| **混凝土結構設計/** | [concrete-general-requirements](建築施工與材料/混凝土結構設計/混凝土通用規定/concrete-general-requirements/) | C 類台灣法規 |
+| | [concrete-column-design](建築施工與材料/混凝土結構設計/混凝土柱設計/concrete-column-design/) | C 類台灣法規 |
+| | [concrete-beam-design](建築施工與材料/混凝土結構設計/混凝土梁設計/concrete-beam-design/) | C 類台灣法規 |
+| | [concrete-slab-design](建築施工與材料/混凝土結構設計/混凝土版設計/concrete-slab-design/) | C 類台灣法規 |
+| | [concrete-wall-design](建築施工與材料/混凝土結構設計/混凝土牆設計/concrete-wall-design/) | C 類台灣法規 |
 
 ---
 
@@ -196,7 +198,7 @@
 |-----|-|-|-|
 | **A 類通用技能** | 5 個 | 國際通用標準，無需台灣適配 | AI + 人類直接使用 |
 | **B 類適配技能** | 8 個 | 國際規範→台灣適配，保留 TODO 注記 | 國際→台灣雙向支援 |
-| **C 類台灣法規技能** | 7 個 | 完全台灣法規，MCP 工具對接 | 台灣法規本位，官方對接 |
+| **C 類台灣法規技能** | 12 個 | 完全台灣法規，MCP 工具對接 | 台灣法規本位，官方對接 |
 
 ---
 
