@@ -8,7 +8,7 @@
 
 | 技能名稱 | 類型 | skill.md (AI) | domain.md (人類) |
 |---------|---|-----|-----|
-| [accessible-door-clear-width](accessible-door-clear-width/) | C 類台灣法規 | ✅ | ✅ |
+| [accessible-door-clear-width](無障礙出入口門淨寬實務陷阱/accessible-door-clear-width/) | C 類台灣法規 | ✅ | ✅ |
 
 > `accessible-door-clear-width` 收錄無障礙出入口門淨寬的實務陷阱：規範量「門框間距離 ≥ 90cm」，但實際有效通行淨寬會被門扇與貼面吃掉，故開口常畫 100cm（§205.2.3）。
 
