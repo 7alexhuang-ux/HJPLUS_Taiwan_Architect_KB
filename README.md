@@ -1,15 +1,47 @@
-# HJPLUS 台灣建築師技能知識庫
+# 台灣AEC(建築x工程x營造)產業技能開源知識庫
 
-這個儲存庫是為在台灣工作的建築師提供的綜合知識庫，包含最佳實務、設計標準、施工指引和專業技能。
+<div align="center">
+  <img src="images/cover.jpg" alt="HJPLUS Taiwan AEC Knowledge Base" width="100%">
+</div>
+
+<div align="center">
+  <a href="LICENSE-CODE">
+    <img src="https://img.shields.io/badge/Code-Apache%202.0-blue" alt="Code License"></a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/Content-CC%20BY--SA%204.0-lightgrey" alt="Content License"></a>
+  <img src="https://img.shields.io/badge/brand-HJPLUS.DESIGN-black" alt="HJPLUS.DESIGN">
+  <a href="https://www.youtube.com/watch?v=SVQ4Y1NpnrA">
+    <img src="https://img.shields.io/badge/youtube-video-crimson" alt="YouTube Video"></a>
+</div>
+
+---
+
+這個儲存庫是為在台灣工作的建築營造室裝從業人員提供的綜合知識庫，包含最佳實務、設計標準、施工指引和專業技能。
+
+## 📰 最近更新
+
+> 感謝所有貢獻者！此區塊記錄近期已合併的 PR。
+
+- **2026-06-17** 🏗️ 新增混凝土結構設計分類（5 個 C 類技能）([#9](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/9))
+- **2026-06-17** ♿ 新增無障礙出入口門淨寬實務陷阱技能 ([#12](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/12))
+- **2026-05-17** ✨ 新增公共工程分類（公開招標、公開閱覽） ([#4](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/4))
+- **2026-05-03** 🔥 新增排煙窗法規檢討技能 ([#1](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/1))
+
+<details>
+<summary>🛠️ 維護者備註</summary>
+此區塊由維護者在 **合併 PR 後** 手動更新。一般貢獻者無須在此新增項目。
+</details>
 
 ## 目的
 
-此知識庫專為幫助台灣建築師而設計，提供：
+此知識庫專為幫助台灣AEC產業從業人員而設計，目前有：
 - 官方建築法規和制度資訊
 - 設計和施工的最佳實務
 - 專業發展資源
 - 實用工具和方法論
 - 結合台灣建築環境的專業知識
+
+歡迎不同專業領域的夥伴加入新條目。
 
 ## 核心分類
 
@@ -58,13 +90,14 @@
 
 ### 4️⃣ [建築法規](建築法規/) Building Codes & Regulations
 
-**5 個技能模組（5C）**
+**6 個技能模組（6C）**
 
 - **消防安全/**
   - [taiwan-fire-safety](建築法規/消防安全/taiwan-fire-safety/) (C 類台灣法規)
-  - [smoke-exhaust-review](建築法規/消防安全/smoke-exhaust-review/) (C 類台灣法規)
+  - [smoke-exhaust-review](建築法規/消防安全/排煙窗法規檢討/smoke-exhaust-review/) (C 類台灣法規)
 - **無障礙設計/**
   - [taiwan-accessibility](建築法規/無障礙設計/taiwan-accessibility/) (C 類台灣法規)
+  - [accessible-door-clear-width](建築法規/無障礙設計/無障礙出入口門淨寬實務陷阱/accessible-door-clear-width/) (C 類台灣法規)
 - **施工文件與驗收/**
   - [taiwan-construction-docs](建築法規/施工文件與驗收/taiwan-construction-docs/) (C 類台灣法規)
 - **容積率與建蔽率計算/**
@@ -121,14 +154,15 @@
 
 ### 7️⃣ [建築施工與材料](建築施工與材料/) Construction Materials
 
-- 施工方法/
-- 材料選擇/
-- 品質管制/
-- 安全標準/
-- 環境考量/
-- 維護與修繕/
+**5 個技能模組（5C）**
 
-> 待擴充
+| 分類 | 技能 | 類別 |
+|--|--|--|
+| **混凝土結構設計/** | [concrete-general-requirements](建築施工與材料/混凝土結構設計/混凝土通用規定/concrete-general-requirements/) | C 類台灣法規 |
+| | [concrete-column-design](建築施工與材料/混凝土結構設計/混凝土柱設計/concrete-column-design/) | C 類台灣法規 |
+| | [concrete-beam-design](建築施工與材料/混凝土結構設計/混凝土梁設計/concrete-beam-design/) | C 類台灣法規 |
+| | [concrete-slab-design](建築施工與材料/混凝土結構設計/混凝土版設計/concrete-slab-design/) | C 類台灣法規 |
+| | [concrete-wall-design](建築施工與材料/混凝土結構設計/混凝土牆設計/concrete-wall-design/) | C 類台灣法規 |
 
 ---
 
@@ -147,31 +181,101 @@
 
 ---
 
+### 9️⃣ [公共工程](公共工程/) Public Engineering
+
+**2 個技能模組（2C）**
+
+| 分類 | 技能 | 類別 |
+|--|--|--|
+| **公開招標/** | [public-bidding](公共工程/公開招標/public-bidding/) | C 類台灣法規 |
+| **公開閱覽/** | [public-review](公共工程/公開閱覽/public-review/) | C 類台灣法規 |
+
+> 基於政府採購法，涵蓋建築師承接公共工程的招標與閱覽程序
+
+---
+
 ## 技能分類說明
 
 | 分類 | 數量 | 特徵 | 適用對象 |
 |-----|-|-|-|
 | **A 類通用技能** | 5 個 | 國際通用標準，無需台灣適配 | AI + 人類直接使用 |
 | **B 類適配技能** | 8 個 | 國際規範→台灣適配，保留 TODO 注記 | 國際→台灣雙向支援 |
-| **C 類台灣法規技能** | 5 個 | 完全台灣法規，MCP 工具對接 | 台灣法規本位，官方對接 |
+| **C 類台灣法規技能** | 13 個 | 完全台灣法規，MCP 工具對接 | 台灣法規本位，官方對接 |
 
 ---
 
 ## 文件架構說明
 
-### 技能文件雙語結構
+### 雙層知識結構
 
-每個技能包含兩個文件：
+每個知識模組採用**上層中文（人類入口）+ 下層英文（AI 技能）**的架構，符合 Agent Skills 開放標準（Claude Code、OpenCode 等）：
 
-1. **skill.md**（AI 用，英文）
-   - 使用英文專業技術術語
-   - 定義核心能力與 AI 操作指南
-   - 支援 AI 精確調動與理解
+```text
+公開招標/                          <-- 人類直覺中文分類
+├── domain.md                     <-- 人類打開資料夾第一眼看到的中文說明
+├── 參考資料/                     <-- 人類使用的圖片、範本等附件（可選）
+└── public-bidding/               <-- AI 自動識別的英文技能資料夾
+    ├── SKILL.md                  <-- AI 執行指令 (全大寫)
+    ├── references/               <-- 參考法規 (可選)
+    ├── scripts/                  <-- 執行腳本 (可選)
+    └── assets/                   <-- AI 技能用的圖片、範本 (可選)
+```
 
-2. **domain.md**（人類用，繁體中文）
-   - 使用繁體中文專業術語
-   - 說明技能用途與學習重點
-   - 支援人類學習與知識內化
+### 雙語文件對照
+
+| 檔案 | 語言 | 用途 |
+|------|------|------|
+| **domain.md** | 繁體中文 | 人類閱讀，說明使用情境、學習目標、實務應用、參考法規 |
+| **SKILL.md** | 英文 | AI 讀取，含 YAML frontmatter、核心步驟、技術規格、MCP 工具呼叫 |
+
+### frontmatter 規則
+
+SKILL.md 開頭必須包含 YAML frontmatter：
+
+```yaml
+---
+name: skill-name-hyphenated
+description: "This skill should be used when [具體觸發情境]。"
+---
+```
+
+- `name` 必須與**下層英文資料夾**名稱完全一致
+- `description` 必須包含具體觸發情境，讓 AI 知道何時呼叫
+- 建立新知識時，請複製 `知識樣板/` 資料夾作為起點
+
+### 資料夾命名規則
+
+> **上層分類可用中文，最底層技能資料夾必須用小寫英文。**
+
+| 層級 | 格式 | 範例 |
+|------|------|------|
+| 分類 | 繁體中文 | `公共工程/` |
+| 子分類 | 繁體中文 | `公開招標/` |
+| **知識入口** | **繁體中文** | **`排煙窗法規檢討/`** |
+| **AI 技能** | **小寫英文 + 連字號** | **`smoke-exhaust-review/`** |
+
+- ✅ `建築法規/消防安全/排煙窗法規檢討/domain.md` (人類入口)
+- ✅ `建築法規/消防安全/排煙窗法規檢討/smoke-exhaust-review/SKILL.md` (AI 技能)
+
+> **AI 技能資料夾必須是英文翻譯，不可使用中文拼音。**
+
+| 狀態 | 範例 | 說明 |
+|------|------|------|
+| ✅ 正確 | `building-area-review/` | 英文翻譯 |
+| ❌ 錯誤 | `jian-zhu-mian-ji/` | 中文拼音 |
+
+---
+
+## ⚠️ 免責聲明
+
+本知識庫內容僅供**參考與教育用途**，不構成專業工程、法律或建築設計建議。
+
+- 部分內容由 AI 輔助生成或整理，雖力求正確，但**未經專業技師簽證或第三方審核**
+- 引用法規條文可能因修法而過時，請以 [全國法規資料庫](https://law.moj.gov.tw/) 及各主管機關最新公告為準
+- 實際工程設計與施工應由**依法登記之專業技師或建築師**簽證負責
+- 使用本知識庫產生的任何決策或後果，由使用者自行承擔
+
+如有疑義，歡迎透過 Issue 或 PR 指正。
 
 ---
 
@@ -190,7 +294,7 @@
 
 此專案採用 **分層授權** 模式：
 
-- **文字內容**（`.md` 文件）：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hant)
-- **腳本程式碼**（`.sh`、`.py`、`.js`、`.ts` 等）：[PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)
+- **文字內容**（`.md` 文件）：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hant)
+- **腳本程式碼**（`.sh`、`.py`、`.js`、`.ts` 等）：[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 詳見 [LICENSE](LICENSE) 與 [LICENSE-CODE](LICENSE-CODE) 檔案。
