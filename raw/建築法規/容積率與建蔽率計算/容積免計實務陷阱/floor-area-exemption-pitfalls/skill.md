@@ -67,6 +67,11 @@ The same "finishing layer / construction tolerance erodes clear dimension → cr
 - Clear-depth determination for **irregularly-shaped lobbies** (how the "> 2 m clear depth" portion is recognized when the lobby is non-rectangular) — see National Land Management Agency interpretation ([nlma 12840](https://www.nlma.gov.tw/ch/titlelist/interpcomp/12840)).
 - Article 162 §1 subparagraphs 2–3 (MEP, parking exemptions) carry separate execution interpretations to review alongside the lobby exemption.
 
+### MCP Tool Examples
+
+- `taiwan-building-code_search_building_interpretations(query: "容積免計 梯廳", limit: 5)`
+- `taiwan-building-code_search_building_code(query: "容積率", limit: 10)`
+
 ## References
 
 - Building Technical Regulations (Design & Construction) Article 162 — FAR gross-floor-area calculation and exemption items ([Laws & Regulations Database](https://law.moj.gov.tw/LawClass/LawSingleRela.aspx?PCODE=D0070115&FLNO=162&ty=L))

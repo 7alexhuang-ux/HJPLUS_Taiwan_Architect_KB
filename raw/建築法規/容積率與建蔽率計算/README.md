@@ -6,11 +6,11 @@
 
 ### 容積免計與實務陷阱
 
-| 技能名稱 | 類型 | skill.md (AI) | domain.md (人類) |
+| 知識入口（中文） | 類型 | domain.md (人類) | AI 技能 (skill.md) |
 |---------|---|-----|-----|
-| [floor-area-exemption-pitfalls](floor-area-exemption-pitfalls/) | C 類台灣法規 | ✅ | ✅ |
+| [容積免計實務陷阱](容積免計實務陷阱/) | C 類台灣法規 | ✅ | [floor-area-exemption-pitfalls](容積免計實務陷阱/floor-area-exemption-pitfalls/) |
 
-> `floor-area-exemption-pitfalls` 收錄容積免計項目的實務陷阱，第一張卡片為「梯廳免計容積——完成面淨尺寸陷阱」，並標示其屬跨法規的「完成面淨尺寸陷阱」模式。
+> `容積免計實務陷阱` 收錄容積免計項目的實務陷阱，第一張卡片為「梯廳免計容積——完成面淨尺寸陷阱」，並標示其屬跨法規的「完成面淨尺寸陷阱」模式。
 
 ---
 
