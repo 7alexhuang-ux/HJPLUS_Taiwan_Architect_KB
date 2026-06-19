@@ -20,7 +20,8 @@
 
 ## 📰 最近更新
 
-> 感謝所有貢獻者！此區塊記錄近期已合併的 PR。
+<details>
+<summary>點開查看近期已合併的 PR（感謝所有貢獻者！）</summary>
 
 - **2026-06-19** 🧰 新增設計軟體與工具分類（Archicad 4 個技能模組）([#14](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/14))
 - **2026-06-19** 🪜 新增樓梯欄杆坡道技能（建技規 §33 樓梯寬度）([#11](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/11))
@@ -31,9 +32,7 @@
 - **2026-05-17** ✨ 新增公共工程分類（公開招標、公開閱覽） ([#4](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/4))
 - **2026-05-03** 🔥 新增排煙窗法規檢討技能 ([#1](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/1))
 
-<details>
-<summary>🛠️ 維護者備註</summary>
-此區塊由維護者在 **合併 PR 後** 手動更新。一般貢獻者無須在此新增項目。
+> 🛠️ 維護者備註：此區塊由維護者在合併 PR 後手動更新。一般貢獻者無須在此新增項目。
 </details>
 
 ## 目的
