@@ -1,7 +1,11 @@
 ---
 name: floor-area-exemption-pitfalls
 description: "This skill should be used when reviewing floor-area-ratio (FAR / 容積) exemption items for buildings in Taiwan and avoiding the gap between nominal drawing dimensions and finished clear dimensions. It covers the elevator/stair lobby (梯廳) FAR-exemption clear-dimension trap and the cross-regulation 'finished clear dimension' pattern where finishing layers (e.g. stone cladding) erode the legally-measured dimension and jeopardize the use permit (使照)."
-user-invocable: true
+license: CC-BY-SA-4.0
+compatibility: claude-code,opencode,agent-skills
+metadata:
+  audience: architects
+  region: taiwan
 ---
 
 # Floor-Area Exemption Pitfalls (容積免計項目實務陷阱)
