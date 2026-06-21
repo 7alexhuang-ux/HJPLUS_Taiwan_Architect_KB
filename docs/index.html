@@ -389,9 +389,9 @@
     <p class="cta-sub">代表你也覺得這件事有意義。不用一次交一篇大作 — 改一個錯字、補一段說明、更新一個法規條文，都是貢獻。</p>
 
     <div class="cta-stats">
-      <div class="cta-stat"><div class="num">82</div><div class="label">commits</div></div>
-      <div class="cta-stat"><div class="num">8</div><div class="label">contributors</div></div>
-      <div class="cta-stat"><div class="num">39+</div><div class="label">skills</div></div>
+      <div class="cta-stat"><div class="num" data-to="82">82</div><div class="label">commits</div></div>
+      <div class="cta-stat"><div class="num" data-to="8">8</div><div class="label">contributors</div></div>
+      <div class="cta-stat"><div class="num" data-to="39">39</div><span style="font-size:1.5rem;font-weight:800;color:#fff">+</span><div class="label">skills</div></div>
     </div>
 
     <div>
@@ -423,11 +423,11 @@
     var h = document.querySelectorAll('.hero-stats .h-counter');
     var hVals = [stats.c, stats.cat, stats.s, stats.con];
     for (var i = 0; i < h.length; i++) h[i].dataset.to = hVals[i];
-    // CTA stat nums
+    // CTA stat nums (data-to)
     var c = document.querySelectorAll('.cta-stat .num');
-    if (c[0]) c[0].textContent = stats.c;
-    if (c[1]) c[1].textContent = stats.con;
-    if (c[2]) c[2].textContent = stats.s + '+';
+    if (c[0]) c[0].dataset.to = stats.c;
+    if (c[1]) c[1].dataset.to = stats.con;
+    if (c[2]) c[2].dataset.to = stats.s;
     // contributor list
     if (stats.conList) {
       var cl = document.getElementById('contribList');
@@ -562,33 +562,28 @@ setTimeout(() => {
   });
 }, 3500);
 
-// ── counter animation ──
+// ── CTA counter animation ──
 (function() {
-  const ctaSec = document.getElementById('sec-cta');
+  var ctaSec = document.getElementById('sec-cta');
   if (!ctaSec) return;
-  const nums = ctaSec.querySelectorAll('.cta-stat .num');
-  const targets = Array.from(nums).map(el => el.textContent.trim());
-  // reset to 0
-  nums.forEach((el, i) => {
-    el.textContent = targets[i].endsWith('+') ? '0+' : '0';
-  });
+  var nums = ctaSec.querySelectorAll('.cta-stat .num');
 
-  let animated = false;
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+  // reset to 0
+  nums.forEach(function(el) { el.textContent = '0'; });
+
+  var animated = false;
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
       if (entry.isIntersecting && !animated) {
         animated = true;
-        nums.forEach((el, i) => {
-          const raw = targets[i];
-          const isPlus = raw.endsWith('+');
-          const targetNum = parseInt(raw);
-          const dur = 1600;
-          const start = performance.now();
+        nums.forEach(function(el) {
+          var target = parseInt(el.dataset.to);
+          if (!target) return;
+          var dur = 1600;
+          var start = performance.now();
           function tick(now) {
-            const t = Math.min((now - start) / dur, 1);
-            // ease-out cubic
-            const v = Math.round((1 - Math.pow(1 - t, 3)) * targetNum);
-            el.textContent = isPlus ? v + '+' : v;
+            var t = Math.min((now - start) / dur, 1);
+            el.textContent = Math.round((1 - Math.pow(1 - t, 3)) * target);
             if (t < 1) requestAnimationFrame(tick);
           }
           requestAnimationFrame(tick);
