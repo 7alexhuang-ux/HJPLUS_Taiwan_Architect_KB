@@ -182,7 +182,10 @@
     <p class="hero-sub">讓 AI 去回答重複問題，讓人類專心做只有人類能做的事。</p>
     <p class="lead hero-lead">人寫筆記，AI 陪跑新人。知識越用越厚，不會退休就帶走。</p>
     <p class="lead hero-stats" style="margin-top:24px;font-size:0.8125rem;color:rgba(255,255,255,0.35)">
-      目前已累積 82 次 commit、10 大分類、39+ 技能模組，由 8 位貢獻者共同維護。
+      目前已累積 <span class="h-counter" data-to="82">0</span> 次 commit、
+      <span class="h-counter" data-to="10">0</span> 大分類、
+      <span class="h-counter" data-to="39">0</span><span class="h-plus">+</span> 技能模組，
+      由 <span class="h-counter" data-to="8">0</span> 位貢獻者共同維護。
     </p>
     <div class="meta">
       <span>CC BY-SA 4.0</span>
@@ -450,6 +453,21 @@ setTimeout(startAuto, 4000);
 requestAnimationFrame(() => {
   document.querySelector('.hero').classList.add('loaded');
 });
+
+// ── hero counter (starts after reveal finishes) ──
+setTimeout(() => {
+  document.querySelectorAll('.hero-stats .h-counter').forEach(el => {
+    const target = parseInt(el.dataset.to);
+    const dur = 1200;
+    const start = performance.now();
+    function tick(now) {
+      const t = Math.min((now - start) / dur, 1);
+      el.textContent = Math.round((1 - Math.pow(1 - t, 3)) * target);
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+}, 3500);
 
 // ── counter animation ──
 (function() {
