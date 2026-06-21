@@ -649,6 +649,10 @@ setTimeout(() => {
       var link = getField('🔗') || issue.html_url;
       var desc = getField('📝');
 
+      // skip if event date is past (client-side safeguard)
+      var dateOnly = dateStr.match(/(\d{4}-\d{2}-\d{2})/);
+      if (dateOnly && new Date(dateOnly[1]) < new Date(new Date().toDateString())) return;
+
       html += '<div class="event-card">' +
         '<div class="event-info">' +
         '<div class="event-meta">' +
