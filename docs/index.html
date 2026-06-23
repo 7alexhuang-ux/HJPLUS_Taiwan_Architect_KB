@@ -843,8 +843,11 @@ setTimeout(() => {
     }
 
     var time = 0;
+    var visible = true;  // ponytail: toggled by IntersectionObserver below
+    var rafId = null;
 
     function draw() {
+      if (!visible) { rafId = null; return; }
       time += 0.02;
 
       // global slow rotation
@@ -933,11 +936,21 @@ setTimeout(() => {
         }
       });
 
-      requestAnimationFrame(draw);
+      rafId = requestAnimationFrame(draw);
     }
 
+    // ponytail: only draw when section is visible
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        visible = entry.isIntersecting;
+        if (visible && !rafId) { rafId = requestAnimationFrame(draw); }
+        else if (!visible && rafId) { cancelAnimationFrame(rafId); rafId = null; }
+      });
+    }, { threshold: 0.05 });
+    obs.observe(wrap);
+
     resize();
-    draw();
+    rafId = requestAnimationFrame(draw);
     window.addEventListener('resize', resize);
   });
 })();
